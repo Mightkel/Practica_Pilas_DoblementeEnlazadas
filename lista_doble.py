@@ -86,3 +86,28 @@ def buscar(dato):
 print(buscar("Catálogo"))
 print(buscar("Bienvenida"))
 
+def insertar_despues(referencia, dato):
+    global cola
+    actual = cabeza
+    while actual is not None and actual["dato"] != referencia:
+        actual = actual["siguiente"]
+    if actual is None:
+        return False
+
+    nuevo = crear_nodo(dato)
+    siguiente = actual["siguiente"]
+
+    nuevo["anterior"] = actual
+    nuevo["siguiente"] = siguiente
+    actual["siguiente"] = nuevo
+
+    if siguiente is not None:
+        siguiente["anterior"] = nuevo
+    else:
+        cola = nuevo
+    return True
+
+insertar_despues("Contacto", "Mitad")
+mostrar_adelante()
+
+#Reto 3: Historial de Navegador - reto_3.py
