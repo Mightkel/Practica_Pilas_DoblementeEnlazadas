@@ -1,0 +1,8 @@
+PRÁCTICA: LISTAS DOBLEMENTE ENLAZADAS
+Actividades registradas: 8/7
+concept, sim, predict, lab, quiz, r0, r1, r2
+
+Reflexión:
+Lo más difícil de las listas doblemente enlazadas fue modificar el estado de los nodos anterior, siguiente, y el mismo nodo insertado al insertar un nodo, debido a que los 3 deben de conocer sus vecinos, sobre todo cuando se inserta, y un riesgo de hacerlo en el orden incorrecto en la función, es qué si no se almacena el dato, se puede perder información en la modificación de estado de estos (siguiente, anterior)
+
+Nota: progreso autodeclarado, no prueba de ejecución Python.
