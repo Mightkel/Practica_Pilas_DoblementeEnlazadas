@@ -72,3 +72,17 @@ mostrar_atras()
 print("Eliminado:", eliminar("Catálogo"))
 mostrar_adelante()
 mostrar_atras()
+
+#Retos de Programacion
+
+def buscar(dato):
+    actual = cabeza
+    while actual is not None:
+        if actual["dato"] == dato:
+            return True
+        actual = actual["siguiente"]
+    return False
+
+print(buscar("Catálogo"))
+print(buscar("Bienvenida"))
+
